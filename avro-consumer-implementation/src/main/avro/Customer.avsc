@@ -1,0 +1,50 @@
+{
+  "type": "record",
+  "name": "Customer",
+  "namespace": "com.github.claudiodornelles.avro",
+  "doc": "Customer Avro Schema",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "string representation of Customer's unique id in UUID format"
+    },
+    {
+      "name": "firstName",
+      "type": "string",
+      "doc": "Customer's first name"
+    },
+    {
+      "name": "middleName",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Customer's middle name"
+    },
+    {
+      "name": "lastName",
+      "type": "string",
+      "doc": "Customer's last name"
+    },
+    {
+      "name": "age",
+      "type": "int",
+      "doc": "Customer's age"
+    },
+    {
+      "name": "height",
+      "type": "float",
+      "doc": "Customer's height in centimeters"
+    },
+    {
+      "name": "weight",
+      "type": "float",
+      "doc": "Customer's weight in kilograms"
+    },
+    {
+      "name": "automatedEmail",
+      "type": "boolean",
+      "default": true,
+      "doc": "Represents if customer either wants to receive marketing emails or not"
+    }
+  ]
+}
